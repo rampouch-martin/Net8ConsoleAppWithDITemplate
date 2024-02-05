@@ -10,7 +10,7 @@ IConfigurationRoot configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-var connectionString = configuration.GetConnectionString("MssqlConnectionSring") ?? throw new Exception("Connection string is required!");
+var connectionString = configuration.GetConnectionString("MssqlConnectionString") ?? throw new Exception("Connection string is required!");
 
 
 
